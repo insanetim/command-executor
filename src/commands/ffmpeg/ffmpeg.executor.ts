@@ -19,7 +19,7 @@ export class FfmpegExecutor extends CommandExecutor<IFfmpegInput> {
     const width = await this.promptService.input<number>('Width', 'number')
     const height = await this.promptService.input<number>('Height', 'number')
     const path = await this.promptService.input<string>('Path to file', 'input')
-    const name = await this.promptService.input<string>('Path to file', 'input')
+    const name = await this.promptService.input<string>('File name', 'input')
 
     return { width, height, path, name }
   }
